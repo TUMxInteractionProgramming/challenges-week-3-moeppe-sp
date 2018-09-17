@@ -30,10 +30,40 @@ button, strong {
 h1 {
     background-color: #3F51B5;
     color: white;
+    height: 64px;
+    font-size:20px;
+    font-weight: normal;
+    line-height: 64px;
+    position: relative;
+}
+h1 strong{
+    font-weight: normal;
+}
+h1 img{
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+#channels h1{
+    padding-left: 65px;
 }
 
 
+
 /* CHANNELS LIST */
+
+#channels{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    left:0px;
+}
+
+.channel-meta{
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+}
 
 /* #4 #sweat #channels */
 ul {
@@ -41,7 +71,13 @@ ul {
     background-color: white;
     /* #3 #channels #bullets removed */
     list-style-type: none;
+    position: fixed;
+    top:64px;
+    bottom: 72px;
+    width: inherit;
+    overflow-y:auto;
 }
+
 
 li {
     /* #4 #channel #tile geometry */
@@ -51,6 +87,8 @@ li {
     font-size: 16px;
     /* #4 #channel tiles are separated by #lines */
     border-bottom: 1px solid #F5F5F5;
+    line-height: 16px;
+    position: relative;
 }
 
 /* #4 active #channel is #highlighted */
@@ -67,11 +105,15 @@ li img {
 /* TAB BAR */
 
 /* #4 #sweat #tab-bar */
-#tab-bar {
+#tab-bar, #chat-bar{
     /* #3 #tab-bar #container should be white */
     background-color: white;
     /* #3 #tab-bar #container has all buttons centered */
     text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
 }
 
 /* #4 add styles to #tab-bar #buttons */
@@ -84,6 +126,7 @@ li img {
     width: 33%;
     height: 72px;
     padding: 16px;
+    flex: 1 1 0;
 }
 
 /* #4 #tab-bar buttons do have a #line-break and images are centered due to the left&right auto margin */
@@ -96,6 +139,19 @@ li img {
 #tab-bar button.selected {
     color: #3F51B5;
     border-bottom: 4px solid #3F51B5;
+}
+
+#star-current-channel{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+#chat{
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    right: 0px;
 }
 
 
@@ -115,31 +171,74 @@ li img {
 
 .message h3 {
     font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .message h3 em {
     font-size: larger;
     font-style: normal;
+    width: 100px;
+    text-align: right;
 }
 
 .message h3 a {
     /* #3 #chat #link color is primary text */
     color: black;
+    width: 150px;
 }
 
 .message p {
     background-color: white;
     padding: 16px;
+    position: relative;
 }
 
 .message button {
     background-color: #CDDC39;
     color: black;
     text-transform: uppercase;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
 }
 
 /* #4 left align own #messages using #margins */
 .message.own {
     margin-left: 17.5%;
 }
+
+#emojis-button{
+    background-color: white;
+    border: none;
+    height: 72px;
+    padding: 16px;
+}
+
+#emojis{
+    background-color: white;
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    padding: 16px;
+    margin-left: 16px;
+    margin-top: 284px;
+    font-size: 20px;
+    text-align: left;
+    overflow: auto;
+    position: absolute;
+    bottom: 50px;
+
+}
+
+#message-container{
+    position: fixed;
+    top:64px;
+    bottom: 72px;
+    width: inherit;
+    overflow-y:auto;
+}
+
+
 
