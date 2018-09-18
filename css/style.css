@@ -1,7 +1,6 @@
 * {
     font-family: 'Roboto', 'Arial', sans-serif;
-
-     /* #4 #sweat take care of #spacing between various elements */
+    /* #4 #sweat take care of #spacing between various elements */
     margin: 0;
     padding: 0;
 }
@@ -15,50 +14,47 @@ button, strong {
     text-transform: uppercase;
 }
 
-
-
 /* APP BAR */
-
 /* #4 #sweat address both #app-bar s */
 h1 {
     background-color: #3F51B5;
     color: white;
     height: 64px;
-    font-size:20px;
+    font-size: 20px;
     padding-left: 16px;
     font-weight: normal;
     line-height: 64px;
     position: relative;
 }
-h1 strong{
+
+h1 strong {
     font-weight: normal;
 }
-h1 img{
+
+h1 img {
     position: absolute;
     bottom: 0px;
     left: 10px;
 }
-#channels h1{
+
+#channels h1 {
     padding-left: 65px;
 }
 
-h1 strong a{
+h1 strong a {
     color: white;
 }
 
-
-
 /* CHANNELS LIST */
-
-#channels{
+#channels {
     position: absolute;
     height: 100%;
     width: 40%;
-    left:0px;
+    left: 0px;
 }
 
 /*star and chevron positioning*/
-.channel-meta{
+.channel-meta {
     position: absolute;
     right: 10px;
     bottom: 12px;
@@ -66,18 +62,16 @@ h1 strong a{
 }
 
 /* #4 #sweat #channels */
-
 ul {
     background-color: white;
     list-style-type: none;
     /*fixed position to enable only scrolling of list*/
     position: fixed;
-    top:64px;
+    top: 64px;
     bottom: 72px;
     width: inherit;
-    overflow-y:auto;
+    overflow-y: auto;
 }
-
 
 li {
     box-sizing: border-box;
@@ -95,11 +89,9 @@ li.selected {
     border-left: 4px solid #3F51B5;
 }
 
-
 /* TAB BAR */
-
 /* #4 #sweat #tab-bar */
-#tab-bar, #chat-bar{
+#tab-bar, #chat-bar {
     /* #3 #tab-bar #container should be white */
     background-color: white;
     /* #3 #tab-bar #container has all buttons centered */
@@ -116,7 +108,6 @@ li.selected {
     background-color: white;
     border: none;
     font-size: 13px;
-
     /* #4 #tab-bar buttons have a width of #one-third of the available space */
     width: 33%;
     height: 72px;
@@ -139,14 +130,14 @@ li.selected {
 }
 
 /*star for current channel*/
-#star-current-channel{
+#star-current-channel {
     position: absolute;
     top: 20px;
     right: 16px;
 }
 
 /*chat container with 60% width on right side*/
-#chat{
+#chat {
     position: absolute;
     height: 100%;
     width: 60%;
@@ -154,12 +145,12 @@ li.selected {
 }
 
 /*message-container in order to enable scrolling*/
-#message-container{
+#message-container {
     position: fixed;
-    top:64px;
+    top: 64px;
     bottom: 72px;
     width: inherit;
-    overflow-y:auto;
+    overflow-y: auto;
 }
 
 /* MESSAGES */
@@ -167,10 +158,8 @@ li.selected {
 .message {
     /* #3 #chat #width*/
     width: 80%;
-
     /* #4 align all #messages using #margins */
     margin-left: 2.5%;
-
     /* #4 #message distance to next message container*/
     margin-bottom: 8px;
 }
@@ -198,7 +187,6 @@ li.selected {
     width: 150px;
 }
 
-
 .message p {
     background-color: white;
     padding: 16px;
@@ -221,7 +209,7 @@ li.selected {
 }
 
 /*emojis-button at chat-bar*/
-#emojis-button{
+#emojis-button {
     background-color: white;
     border: none;
     height: 72px;
@@ -229,7 +217,7 @@ li.selected {
 }
 
 /*emojis-window positioned as given*/
-#emojis{
+#emojis {
     background-color: white;
     border: 2px solid black;
     width: 250px;
@@ -243,9 +231,4 @@ li.selected {
     position: absolute;
     bottom: 50px;
     display: none;
-
 }
-
-
-
-

@@ -21,6 +21,6 @@ function selectTab(tabId) {
     $('#' + tabId).addClass('selected');
 }
 
-function toggleEmojiBox(){
+function toggleEmojiBox() {
     $('#emojis').toggle();
 }
