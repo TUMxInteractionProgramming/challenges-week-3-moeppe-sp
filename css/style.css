@@ -66,10 +66,10 @@ ul {
     background-color: white;
     list-style-type: none;
     /*fixed position to enable only scrolling of list*/
-    position: fixed;
+    position: absolute;
     top: 64px;
     bottom: 72px;
-    width: inherit;
+    width: 100%;
     overflow-y: auto;
 }
 
@@ -146,10 +146,10 @@ li.selected {
 
 /*message-container in order to enable scrolling*/
 #message-container {
-    position: fixed;
+    position: absolute;
     top: 64px;
     bottom: 72px;
-    width: inherit;
+    width: 100%;
     overflow-y: auto;
 }
 
