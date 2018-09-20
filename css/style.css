@@ -184,7 +184,7 @@ li.selected {
 .message h3 a {
     /* #3 #chat #link color is primary text */
     color: black;
-    width: 150px;
+    width: 200px;
 }
 
 .message p {
